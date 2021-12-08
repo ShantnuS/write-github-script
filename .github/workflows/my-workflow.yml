@@ -18,7 +18,7 @@ jobs:
               repo: context.repo.repo,
               body: "This comment was auto-generated using GitHub Script. Wow."
             })
-            github.issues.createCard({
+            github.projects.createCard({
               column_id: 17157829,
               content_id: context.payload.issue.id,
               content_type: "Issue"
